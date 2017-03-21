@@ -28,5 +28,10 @@ n = ARGV.shift.to_i
 gss = GSS::GSS.new
 points = gss.generate(r, n)
 points.each do |p|
-  print [p.r, p.theta, p.phi].to_csv
+  if options[:cartesian]
+    coord = p.to_cartesian
+    print coord.to_csv
+  else
+    print [p.r, p.theta, p.phi].to_csv
+  end
 end
