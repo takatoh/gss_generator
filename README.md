@@ -1,15 +1,14 @@
-# Gss
+# GSS Generator
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/gss`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+GSS Generator provide generating a set of points that are uniform points on a sphere, with 
+generalized spiral set.
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'gss'
+gem 'gss_generator'
 ```
 
 And then execute:
@@ -18,11 +17,16 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install gss
+    $ gem install gss_generator
 
 ## Usage
 
-TODO: Write usage instructions here
+    $ gss_gen <r> <N>
+
+`r' is radius of spher and N is number of points you want. Output points in polar coordinates into CSV.
+If you want in cartesian coordinates:
+
+    $ gss_gen --cartesian <r> <N>
 
 ## Development
 
@@ -32,5 +36,5 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/gss.
+Bug reports and pull requests are welcome on GitHub at https://github.com/takatoh/gss_generator.
 
