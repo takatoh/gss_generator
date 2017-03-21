@@ -1,5 +1,5 @@
 require "gss/version"
 
-module Gss
+module GSS
   # Your code goes here...
 end

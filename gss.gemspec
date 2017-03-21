@@ -5,7 +5,7 @@ require 'gss/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "gss"
-  spec.version       = Gss::VERSION
+  spec.version       = GSS::VERSION
   spec.authors       = ["takatoh"]
   spec.email         = ["takatoh.m@gmail.com"]
 
