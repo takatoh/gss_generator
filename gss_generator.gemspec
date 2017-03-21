@@ -12,6 +12,7 @@ Gem::Specification.new do |spec|
   spec.summary       = %q{Distribute many points with equal intervals on a sphere.}
   spec.description   = %q{Generate generalized spiral set that are the set of points with uniform distribution on a sphere.}
   spec.homepage      = "https://github.com/takatoh/gss_generator"
+  spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
   # to allow pushing to a single host or delete this section to allow pushing to any host.
