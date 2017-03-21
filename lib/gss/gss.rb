@@ -1,5 +1,7 @@
 # encoding: utf-8
 
+require "gss/polar_point"
+
 
 module GSS
 
