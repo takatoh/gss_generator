@@ -25,7 +25,7 @@ Or install it yourself as:
 
     $ gss_gen <r> <N>
 
-`r' is radius of spher and `N' is number of points you want. Output points in polar coordinates into CSV.
+r is radius of spher and N is number of points you want. Output points in polar coordinates into CSV.
 If you want in cartesian coordinates:
 
     $ gss_gen --cartesian <r> <N>
