@@ -25,7 +25,7 @@ opts.parse!
 r = ARGV.shift.to_f
 n = ARGV.shift.to_i
 
-gss = GSS::GSS.new
+gss = GSS::Generator.new
 points = gss.generate(r, n)
 points.each do |p|
   if options[:cartesian]

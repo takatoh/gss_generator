@@ -5,7 +5,7 @@ require "gss/polar_point"
 
 module GSS
 
-  class GSS
+  class Generator
     def generate(r, n)
       theta_1 = Math::PI
       phi_1 = 0.0
@@ -22,6 +22,6 @@ module GSS
 
       points
     end
-  end   # of class GSS
+  end   # of class Generator
 
 end   # of module GSS

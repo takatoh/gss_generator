@@ -1,5 +1,5 @@
 require "gss/version"
-require "gss/gss"
+require "gss/generator"
 
 module GSS
   # Your code goes here...
