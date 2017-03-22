@@ -29,12 +29,12 @@ r = ARGV.shift.to_f
 n = ARGV.shift.to_i
 
 gss = GSS::Generator.new
-points = gss.generate(r, n, options[:relocation])
+points = gss.generate(n, options[:relocation])
 points.each do |p|
   if options[:cartesian]
-    coord = p.to_cartesian
+    coord = p.to_cartesian.map{|c| c * r }
     print coord.to_csv
   else
-    print [p.r, p.theta, p.phi].to_csv
+    print [r, p.theta, p.phi].to_csv
   end
 end
