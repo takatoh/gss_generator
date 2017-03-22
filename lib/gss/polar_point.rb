@@ -19,7 +19,7 @@ module GSS
     end
 
     def self.from_cartesian(x, y, z)
-      theta = Math.acos(z / (x * x + y * y + z * z))
+      theta = Math.acos(z / Math.sqrt(x * x + y * y + z * z))
       phi = Math.atan2(y, x)
       self.new(theta, phi)
     end
