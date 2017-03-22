@@ -12,6 +12,9 @@ opts.banner = "Generate points with uniform distribution on the sphere."
 opts.on("-c", "--cartesian", "Cartesian coordinate."){|v|
   options[:cartesian] = true
 }
+opts.on("-r", "--relocate", "Relocate first and last point."){|v|
+  options[:relocation] = true
+}
 opts.on_tail("-h", "--help", "Show this message."){|v|
   print opts.help
   exit
@@ -26,7 +29,7 @@ r = ARGV.shift.to_f
 n = ARGV.shift.to_i
 
 gss = GSS::Generator.new
-points = gss.generate(r, n)
+points = gss.generate(r, n, options[:relocation])
 points.each do |p|
   if options[:cartesian]
     coord = p.to_cartesian
