@@ -1,4 +1,8 @@
 # encoding: utf-8
+#
+# Generate points that distributed on unit sphere with Generalized Spiral Set.
+# cf. https://www.jstage.jst.go.jp/article/geoinformatics/12/1/12_1_3/_article/-char/ja/
+#
 
 require "gss/polar_point"
 
