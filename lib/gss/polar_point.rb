@@ -18,6 +18,13 @@ module GSS
       z = @r * Math.cos(@theta)
       [x, y, z]
     end
+
+    def self.from_cartesian(x, y, z)
+      r = Math.sqrt(x * x + y * y + z * z)
+      theta = Math.acos(z / r)
+      phi = Math.atan2(y, x)
+      self.new(r, theta, phi)
+    end
   end   # of class PolarPoint
 
 end   # of module GSS
