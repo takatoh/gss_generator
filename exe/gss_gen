@@ -8,7 +8,14 @@ require 'csv'
 
 options = {}
 opts = OptionParser.new
-opts.banner = "Generate points with uniform distribution on the sphere."
+opts.banner = <<-EOB
+Generate points with uniform distribution on the sphere.
+
+Usage:
+    #{opts.program_name} [options] <r> <N>
+
+Options:
+  EOB
 opts.on("-c", "--cartesian", "Cartesian coordinate."){|v|
   options[:cartesian] = true
 }
